@@ -9,4 +9,14 @@ import ProductsRepository from '@modules/products/infra/typeorm/repositories/Pro
 import IOrdersRepository from '@modules/orders/repositories/IOrdersRepository';
 import OrdersRepository from '@modules/orders/infra/typeorm/repositories/OrdersRepository';
 
-// TODO
+container.register<ICustomersRepository>(
+  'ICustomersRepository',
+  CustomersRepository,
+);
+
+container.register<IProductsRepository>(
+  'IProductsRepository',
+  ProductsRepository,
+);
+
+container.register<IOrdersRepository>('IOrdersRepository', OrdersRepository);

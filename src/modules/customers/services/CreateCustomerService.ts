@@ -2,8 +2,8 @@ import { inject, injectable } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 
-import Customer from '../infra/typeorm/entities/Customer';
-import ICustomersRepository from '../repositories/ICustomersRepository';
+import Customer from '@modules/customers/infra/typeorm/entities/Customer';
+import ICustomersRepository from '@modules/customers/repositories/ICustomersRepository';
 
 interface IRequest {
   name: string;
@@ -12,10 +12,22 @@ interface IRequest {
 
 @injectable()
 class CreateCustomerService {
-  constructor(private customersRepository: ICustomersRepository) {}
+  constructor(
+    @inject('ICustomersRepository')
+    private customersRepository: ICustomersRepository,
+  ) {}
 
   public async execute({ name, email }: IRequest): Promise<Customer> {
-    // TODO
+    const existingCustomer = await this.customersRepository.findByEmail(email);
+
+    if (existingCustomer) {
+      throw new AppError('Customer already exists');
+    }
+
+    return this.customersRepository.create({
+      email,
+      name,
+    });
   }
 }
 
