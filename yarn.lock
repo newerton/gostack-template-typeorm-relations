@@ -1804,7 +1804,7 @@ eslint-plugin-import@^2.22.1:
     resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-prettier@^3.3.1:
+eslint-plugin-prettier@^3.1.3:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.3.1.tgz#7079cfa2497078905011e6f82e8dd8453d1371b7"
   integrity sha512-Rq3jkcFY8RYeQLgk2cCwuc0P7SEFwDravPhsJZOQ5N4YI4DSg50NyqJ/9gdZHzQlHf8MvafSesbNJCcP/FF6pQ==
@@ -5422,10 +5422,10 @@ tsutils@^3.17.1:
   dependencies:
     tslib "^1.8.1"
 
-tsyringe@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/tsyringe/-/tsyringe-4.2.0.tgz#98aca590e19f02949e63a8e374e77e5c8513d594"
-  integrity sha512-NV5BODaXYJJII2MFlSJMiyVVSYW8GjqS5+YAkzATINrH5SlLiz2fS24RLt6/GfodR428ZH6Cykko4yabzJ5wNw==
+tsyringe@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/tsyringe/-/tsyringe-4.4.0.tgz#cd8a6866316b4cf643ee5e72c41c8a221ccea73d"
+  integrity sha512-SlMApe1lhIq546CDp7bF+IdF4RB6d+9C5T7B0AS0P/Bm+Qpizj/gEmZzvw9J/KlXPEt4qHTbi1TRvX3rCPSdTg==
   dependencies:
     tslib "^1.9.3"
 
