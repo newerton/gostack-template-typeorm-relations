@@ -33,7 +33,7 @@
     "eslint-import-resolver-typescript": "^4.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^5.0.0",
-    "jest": ">=25.0.0 <30.0.0",
+    "jest": ">=25.0.0 <31.0.0",
     "prettier": "^3.0.0",
     "supertest": "^7.0.0",
     "ts-jest": "^29.0.1",
