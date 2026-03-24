@@ -40,6 +40,6 @@
     "ts-node": "10.9.2",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.0.0",
-    "typescript": "^5.0.2"
+    "typescript": "^6.0.2"
   }
 }
